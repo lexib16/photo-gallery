@@ -1,0 +1,115 @@
+body,
+h1,
+p,
+ul,
+li,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   background-image: url('Picutres/background.jpg');
+   background-attachment:fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  transition: all 1s;
+  width: 40%;
+  margin: 20px;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #0dc7ce;
+  color: #f7f7f7;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+.gallery {
+  padding: 20px;
+  margin: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.photo {
+  float: left;
+  width: 30%;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0.2);
+  transition: transform 0.3s ease;
+  
+}
+
+.image{
+  height: 300px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+}
+
+.caption {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0px 20px 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
